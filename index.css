@@ -219,3 +219,25 @@ body {
 	line-height: 1.1;
 	text-align: center;
 }
+
+@media (max-width: 900px) {
+.slide-frame{
+	padding: 0px;
+	align-items: center;
+	justify-content: center;
+}
+.slide-counter{display: none;}
+.slide-materials{
+	background-color: rgba(0,0,0,0.01);
+	backdrop-filter: blur(10px);
+	color: #F6EDE2;
+}	
+.slide-title
+{
+	font-size: 64px;
+	text-align: left;
+}
+
+	
+	
+	}
