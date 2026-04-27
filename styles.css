@@ -9,6 +9,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    overflow-x: hidden;
+}
 a {
   all: unset;
   cursor: pointer;
@@ -642,6 +645,21 @@ button:hover {
         width: 100%;
         border-radius: 0px;
     }
+    .w150 { width: 100%; }
+    .footer-body {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-body > div {
+        width: 100% !important;
+    }
+    .footer{height: 100%;
+    padding: 50px 24px;}
+    
+
+
+
+
 
 }
 

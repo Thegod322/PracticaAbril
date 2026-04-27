@@ -80,8 +80,6 @@ function setActiveSlidePreviewState(isVisible) {
     const current = slideParts[activeIndex];
     if (!current) return;
     isMaterialPreviewVisible = isVisible;
-    gsap.to(current.visual, { opacity: isVisible ? 0.08 : 1, duration: 0.32, ease: 'power2.out', overwrite: true });
-    gsap.to(current.overlay, { opacity: isVisible ? 0.28 : 0.92, duration: 0.32, ease: 'power2.out', overwrite: true });
 }
 
 function hideMaterialPreview(delay = 0) {
@@ -106,7 +104,7 @@ function showMaterialPreview(image) {
         materialPreview.style.backgroundImage = image;
         gsap.set(materialPreview, { autoAlpha: 1 });
         setActiveSlidePreviewState(true);
-        gsap.to(materialPreview, { opacity: 0.85, duration: 0.32, ease: 'power2.out', overwrite: true });
+        gsap.to(materialPreview, { opacity: 0.1, duration: 0.32, ease: 'power2.out', overwrite: true });
     };
     if (!materialPreviewImage || materialPreviewImage === image) { reveal(); return; }
     gsap.to(materialPreview, { opacity: 0, duration: 0.18, ease: 'power1.out', overwrite: true, onComplete: reveal });
@@ -258,11 +256,22 @@ function onWheel(event) {
 
 materialCards.forEach((card) => {
     card.addEventListener('mouseenter', () => { showMaterialPreview(resolveMaterialImage(card)); });
+    card.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        showMaterialPreview(resolveMaterialImage(card));
+    }, { passive: false });
 });
 
 materialGroups.forEach((group) => {
     group.addEventListener('mouseleave', () => { hideMaterialPreview(40); });
 });
+
+document.addEventListener('touchstart', (e) => {
+    if (!isMaterialPreviewVisible) return;
+    const insideGroup = materialGroups.some(g => g.contains(e.target));
+    if (!insideGroup) hideMaterialPreview();
+}, { passive: true });
 
 showActiveSlide(activeIndex, false);
 window.addEventListener('wheel', onWheel, { passive: false });
