@@ -1,0 +1,14 @@
+.contactanos {
+    padding: 180px 100px 100px;
+}
+
+.visitanos {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.map-wrapper {
+    width: 100%;
+    height: 500px;
+}

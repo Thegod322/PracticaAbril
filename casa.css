@@ -1,0 +1,148 @@
+.diaimg{
+    background-image: url(RES/casa_dia.webp);
+    background-size: cover;
+}
+.nocheimg{
+    background-image: url(RES/casa_noche.webp);
+    background-size: cover;
+    transition: opacity 2s ease;
+}
+.icono{
+    width: 48px;
+    height: 48px;
+    filter: brightness(0) saturate(100%) invert(96%) sepia(10%) saturate(400%) hue-rotate(340deg) brightness(103%);
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+.dn-inactive {
+    opacity: 0.5;
+}
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(30, 28, 27, 0.20), rgba(30, 28, 27, 0.20)), url(RES/casa_hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.casaimg1{
+    background-image: linear-gradient(rgba(30, 28, 27, 0.20), rgba(30, 28, 27, 0.20)), url(RES/casa1.webp);
+    background-size: cover;
+}
+.casaimg2{
+    background-image: linear-gradient(rgba(30, 28, 27, 0.20), rgba(30, 28, 27, 0.20)), url(RES/casa2.webp);
+    background-size: cover;
+}
+.casaimg3{
+    background-image: linear-gradient(rgba(30, 28, 27, 0.20), rgba(30, 28, 27, 0.20)), url(RES/casa_dia.webp);
+    background-size: cover;
+}
+.casaimg4{
+    background-image: linear-gradient(rgba(30, 28, 27, 0.20), rgba(30, 28, 27, 0.20)), url(RES/casa4.webp);
+    background-size: cover;
+}
+.mat_card1 {
+    width: 200px;
+    height: 300px;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: linear-gradient(rgba(30, 28, 27, 0.20), rgba(30, 28, 27, 0.20)), url(RES/material1.webp);
+}
+.mat_card1:hover
+{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    transition: 0.2s;
+}
+.mat_card2 {
+    width: 200px;
+    height: 300px;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: linear-gradient(rgba(30, 28, 27, 0.20), rgba(30, 28, 27, 0.20)), url(RES/material2.webp);
+}
+.mat_card2:hover
+{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    transition: 0.2s;
+}
+.mat_card3 {
+    width: 200px;
+    height: 300px;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: linear-gradient(rgba(30, 28, 27, 0.20), rgba(30, 28, 27, 0.20)), url(RES/material3.webp);
+}
+.mat_card3:hover
+{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    transition: 0.2s;
+}
+.mat_card4 {
+    width: 200px;
+    height: 300px;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: linear-gradient(rgba(30, 28, 27, 0.20), rgba(30, 28, 27, 0.20)), url(RES/material4.webp);
+}
+.mat_card4:hover
+{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    transition: 0.2s;
+}
+
+#mat-preview {
+    position: fixed;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.mat_card1, .mat_card2, .mat_card3, .mat_card4 {
+    z-index: 1;
+}
+
+.bgaccent2 {
+    background: rgba(230, 193, 145, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.next_houseimg {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.next_houseimg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(30, 28, 27, 0.20), rgba(30, 28, 27, 0.20)), url(RES/casa2.webp);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    z-index: 0;
+}
+
+.next_houseimg:hover::before {
+    opacity: 1;
+}
+
+.next_houseimg > * {
+    position: relative;
+    z-index: 1;
+}

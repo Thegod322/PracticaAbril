@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argi & Lur</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="bgray creamtxt">
+<header class="header page-header flex jbetween acenter ph100 w100">
+    <a href="index.html" class="brand h2_pc">ARGI & LUR</a>
+    <nav class="page-nav flex pl100 gap50 navbartxt_pc" aria-label="Principal">
+        <a href="index.html" class="page-nav__link">INICIO</a>
+        <a href="proyectos.html" class="page-nav__link">PROYECTOS</a>
+        <a href="equipo.html" class="page-nav__link">EQUIPO</a>
+        <a href="contacto.html" class="page-nav__link">CONTACTO</a>
+    </nav>
+
+    <div class="hamburger" id="hamburger" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <nav class="mobile-nav__list" aria-label="Navegación móvil">
+        <a href="index.html" class="mobile-nav__item">INICIO</a>
+        <a href="proyectos.html" class="mobile-nav__item">PROYECTOS</a>
+        <a href="equipo.html" class="mobile-nav__item">EQUIPO</a>
+        <a href="contacto.html" class="mobile-nav__item">CONTACTO</a>
+    </nav>
+</div>
+
+<main id="page-slider" class="page-slider" aria-live="polite">
+    <div class="slider-hud navbartxt_pc">
+        <span class="slider-hud__label">SCROLL</span>
+        <span class="slider-hud__divider"></span>
+        <span class="slider-hud__value">01 / 04</span>
+    </div>
+
+    <div class="slide-counter countertxt_pc flex row  " id="slide-counter">
+        <span class="slide-counter__static">0</span><span id="slide-counter-face">1</span>
+    </div>
+
+    <article class="slide is-active" data-slide-title="La Casa Macasa" style="--slide-bg: url('RES/casa_noche.webp');">
+        <div class="slide-visual"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-frame">
+
+            <div class="slide-main">
+                <div class="slide-headline">
+                    <h1 class="slide-title nowrap">LA CASA MACASA</h1>
+                    <span class="slide-rule"></span>
+                </div>
+            </div>
+
+            <div class="slide-copy-block">
+                <p class="slide-kicker h3_pc">MADERA, PIEDRA Y SOMBRA</p>
+                <p class="slide-copy body2_pc">Una atmósfera cálida donde la estructura se recoge hacia el fuego y la luz se abre al jardín. La transición del material es suave: piedra oscura en el núcleo, pino claro en la envolvente y una paleta serena para que el paisaje termine la casa.</p>
+            </div>
+
+            <div class="slide-materials">
+                <div class="material-card">
+                    <span class="material-card__swatch" style="--material-image: url('RES/material6.webp');"></span>
+                    <span class="material-card__label">Obsidian</span>
+                </div>
+                <div class="material-card">
+                    <span class="material-card__swatch" style="--material-image: url('RES/material1.webp');"></span>
+                    <span class="material-card__label">Pino de Araya</span>
+                </div>
+                <div class="material-card">
+                    <span class="material-card__swatch" style="--material-image: url('RES/material4.webp');"></span>
+                    <span class="material-card__label">Cal apagada</span>
+                </div>
+                <div class="material-card">
+                    <span class="material-card__swatch" style="--material-image: url('RES/material3.webp');"></span>
+                    <span class="material-card__label">Nogal tostado</span>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="slide" data-slide-title="Casa Araia" style="--slide-bg: url('RES/casa_dia.webp');">
+        <div class="slide-visual"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-frame">
+
+            <div class="slide-main">
+                <div class="slide-headline">
+                    <h1 class="slide-title nowrap">CASA ARAIA</h1>
+                    <span class="slide-rule"></span>
+                </div>
+            </div>
+
+            <div class="slide-copy-block">
+                <p class="slide-kicker h3_pc">LUZ ABIERTA Y VETAS CLARAS</p>
+                <p class="slide-copy body2_pc">Un interior más expuesto, pensado para que la luz de día dibuje toda la geometría. Los acabados suben de tono y la textura se vuelve más ligera para que el espacio gane respiración sin perder densidad material.</p>
+            </div>
+
+            <div class="slide-materials">
+                <div class="material-card">
+                    <span class="material-card__swatch" style="--material-image: url('RES/material1.webp');"></span>
+                    <span class="material-card__label">Pino natural</span>
+                </div>
+                <div class="material-card">
+                    <span class="material-card__swatch" style="--material-image: url('RES/material4.webp');"></span>
+                    <span class="material-card__label">Yeso mineral</span>
+                </div>
+                <div class="material-card">
+                    <span class="material-card__swatch" style="--material-image: url('RES/material2.webp');"></span>
+                    <span class="material-card__label">Lino arena</span>
+                </div>
+                <div class="material-card">
+                    <span class="material-card__swatch" style="--material-image: url('RES/material3.webp');"></span>
+                    <span class="material-card__label">Roble medio</span>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="slide" data-slide-title="Casa Basoa" style="--slide-bg: url('RES/casa1.webp');">
+        <div class="slide-visual"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-frame">
+
+            <div class="slide-main">
+                <div class="slide-headline">
+                    <h1 class="slide-title nowrap">CASA BASOA</h1>
+                    <span class="slide-rule"></span>
+                </div>
+            </div>
+
+            <div class="slide-copy-block">
+                <p class="slide-kicker h3_pc">NÚCLEO OSCURO Y PAISAJE LARGO</p>
+                <p class="slide-copy body2_pc">Aquí el proyecto se comprime para enfatizar la secuencia. Un corazón más oscuro recoge el calor y el perímetro se despega para dejar pasar el bosque. La casa se lee como una pieza precisa, casi silenciosa.</p>
+            </div>
+
+            <div class="slide-materials">
+                <div class="material-card">
+                    <span class="material-card__swatch" style="--material-image: url('RES/material6.webp');"></span>
+                    <span class="material-card__label">Piedra humo</span>
+                </div>
+                <div class="material-card">
+                    <span class="material-card__swatch" style="--material-image: url('RES/material3.webp');"></span>
+                    <span class="material-card__label">Nogal profundo</span>
+                </div>
+                <div class="material-card">
+                    <span class="material-card__swatch" style="--material-image: url('RES/material2.webp');"></span>
+                    <span class="material-card__label">Textil topo</span>
+                </div>
+                <div class="material-card">
+                    <span class="material-card__swatch" style="--material-image: url('RES/material4.webp');"></span>
+                    <span class="material-card__label">Travertino claro</span>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="slide" data-slide-title="Casa Luz" style="--slide-bg: url('RES/casa2.webp');">
+        <div class="slide-visual"></div>
+        <div class="slide-overlay"></div>
+        <div class="slide-frame">
+
+            <div class="slide-main">
+                <div class="slide-headline">
+                    <h1 class="slide-title nowrap">CASA LUZ</h1>
+                    <span class="slide-rule"></span>
+                </div>
+            </div>
+
+            <div class="slide-copy-block">
+                <p class="slide-kicker h3_pc">PALETA SERENA, CONTORNO LIMPIO</p>
+                <p class="slide-copy body2_pc">El último estado baja el contraste y deja que la envolvente respire. Superficies más suaves, madera seca y piedra templada para cerrar la colección con una casa que no necesita imponerse para quedarse en la memoria.</p>
+            </div>
+
+            <div class="slide-materials">
+                <div class="material-card">
+                    <span class="material-card__swatch" style="--material-image: url('RES/material4.webp');"></span>
+                    <span class="material-card__label">Crema mate</span>
+                </div>
+                <div class="material-card">
+                    <span class="material-card__swatch" style="--material-image: url('RES/material1.webp');"></span>
+                    <span class="material-card__label">Pino seco</span>
+                </div>
+                <div class="material-card">
+                    <span class="material-card__swatch" style="--material-image: url('RES/material2.webp');"></span>
+                    <span class="material-card__label">Arena cálida</span>
+                </div>
+                <div class="material-card">
+                    <span class="material-card__swatch" style="--material-image: url('RES/material6.webp');"></span>
+                    <span class="material-card__label">Pizarra suave</span>
+                </div>
+            </div>
+        </div>
+    </article>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="index.js"></script>
+<script src="hamburger.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/*images*/
+.equipoHero {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero {
+    background: linear-gradient(rgba(30, 28, 27, 0.20), rgba(30, 28, 27, 0.20)), url('RES/equipo_hero.webp');
+    background-size: cover;
+}
+
+.argiimg{
+    background: linear-gradient(rgba(30, 28, 27, 0.20), rgba(30, 28, 27, 0.20)), url('RES/equipo_argi.webp');
+    background-size: cover;
+}
+.lurimg{
+    background: linear-gradient(rgba(30, 28, 27, 0.20), rgba(30, 28, 27, 0.20)), url('RES/equipo_lur.webp');
+    background-size: cover;
+}
+.quehacemosimg{
+    background: linear-gradient(rgba(30, 28, 27, 0.20), rgba(30, 28, 27, 0.20)), url('RES/equipo_foto1.webp');
+    background-size: cover;
+}
+.queimg1{
+    background: linear-gradient(rgba(30, 28, 27, 0.20), rgba(30, 28, 27, 0.20)), url('RES/equipo_foto2.webp');
+    background-size: cover;
+    z-index: 1;
+}
+.queimg2{
+    background: linear-gradient(rgba(30, 28, 27, 0.20), rgba(30, 28, 27, 0.20)), url('RES/equipo_foto3.webp');
+    background-size: cover;
+    z-index: 2;
+}
+.queimg3{
+    background: linear-gradient(rgba(30, 28, 27, 0.20), rgba(30, 28, 27, 0.20)), url('RES/equipo_foto4.webp');
+    background-size: cover;
+    z-index: 1;
+}
